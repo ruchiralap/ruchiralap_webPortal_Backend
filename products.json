@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+  
       "product_name": "অর্গানিক নারকেল তেল",
       "category_name": "Organic Oil",
       "price": 450,
@@ -29,7 +29,7 @@
       "description_point_5.3": "প্রয়োজনীয় তাপমাত্রায় সংরক্ষণ করুন"
     },
     {
-      "id": 2,
+   
       "product_name": "খাঁটি মধু",
       "category_name": "Honey",
       "price": 300,
@@ -58,7 +58,7 @@
       "description_point_5.3": "শুকনো স্থানে সংরক্ষণ করুন"
     },
     {
-      "id": 3,
+   
       "product_name": "কাঠ বাদাম",
       "category_name": "Nuts & Seeds",
       "price": 550,
@@ -87,7 +87,7 @@
       "description_point_5.3": "শুকনো স্থানে সংরক্ষণ করুন"
     },
     {
-      "id": 3,
+     
       "product_name": "চিয়া বীজ",
       "category_name": "Nuts & Seeds",
       "price": 350,
@@ -116,7 +116,7 @@
       "description_point_5.3": "শুকনো স্থানে রাখুন"
     },
     {
-      "id": 4,
+    
       "product_name": "সুন্দরবনের মধু",
       "category_name": "Honey",
       "price": 400,
@@ -145,7 +145,9 @@
       "description_point_5.3": "শুকনো স্থানে সংরক্ষণ করুন"
     },
     {
-      "id": 5,
+  
+        
+
       "product_name": "মাঘি সরিষার তেল",
       "category_name": "Local Maghi Sarisha Oil",
       "price": 250,
@@ -174,7 +176,7 @@
       "description_point_5.3": "শুকনো স্থানে রাখুন"
     },
     {
-      "id": 6,
+ 
       "product_name": "বট পাতার মসলা",
       "category_name": "Masala",
       "price": 120,
@@ -203,7 +205,7 @@
       "description_point_5.3": "শুকনো স্থানে রাখুন"
     },
     {
-      "id": 7,
+ 
       "product_name": "বট পাতার মসলা",
       "category_name": "Masala",
       "price": 120,
@@ -232,7 +234,7 @@
       "description_point_5.3": "শুকনো স্থানে রাখুন"
     },
     {
-      "id": 8,
+     
       "product_name": "গরম মসলা",
       "category_name": "Masala",
       "price": 120,
@@ -261,7 +263,7 @@
       "description_point_5.3": "শুকনো স্থানে রাখুন"
     },
     {
-      "id": 9,
+     
       "product_name": "বট পাতার মসলা",
       "category_name": "Masala",
       "price": 120,
@@ -290,7 +292,7 @@
       "description_point_5.3": "শুকনো স্থানে রাখুন"
     },
     {
-      "id": 10,
+
       "product_name": "বট পাতার মসলা",
       "category_name": "Masala",
       "price": 120,
@@ -319,7 +321,7 @@
       "description_point_5.3": "শুকনো স্থানে রাখুন"
     },
     {
-      "id": 11,
+
       "product_name": "বট পাতার মসলা",
       "category_name": "Masala",
       "price": 120,
