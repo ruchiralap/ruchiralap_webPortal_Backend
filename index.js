@@ -39,6 +39,25 @@ dbConnect();
 /// ruchiralap
 ///BOoWCIF67GRG4yuX
 
+const Products = client.db("ruchir_alap").collection("products");
+const Categories = client.db("ruchir_alap").collection("categories");
+///getting all the products api
+
+app.get("/products", async (req, res) => {
+  const cursor = Products.find();
+  const result = await cursor.toArray();
+  res.send(result);
+});
+
+///getting all the categories api
+
+app.get("/categories", async (req, res) => {
+  const cursor = Categories.find();
+  const result = await cursor.toArray();
+  res.send(result);
+});
+
+
 app.get("/", (req, res) => {
   res.send("ruchir alap is running");
 });
