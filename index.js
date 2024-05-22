@@ -1,23 +1,23 @@
 const express = require("express");
-const jwt = require("jsonwebtoken");
-const cookieParser = require("cookie-parser");
 require("dotenv").config();
 const cors = require("cors");
-const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
+const { MongoClient, ServerApiVersion } = require("mongodb");
 
 const app = express();
 
 const port = process.env.PORT || 5000;
 
-
 // middleware
-// middleware
-app.use(cors());
-
+const corsOptions = {
+  origin: ["http://localhost:5173"],
+  credentials: true,
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 ///database connect
-const uri= `mongodb+srv://ruchiralap:BOoWCIF67GRG4yuX@cluster0.wf9hzrv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+const uri = `mongodb+srv://ruchiralap:BOoWCIF67GRG4yuX@cluster0.wf9hzrv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -41,8 +41,8 @@ dbConnect();
 
 const Products = client.db("ruchir_alap").collection("products");
 const Categories = client.db("ruchir_alap").collection("categories");
-///getting all the products api
 
+///getting all the products api
 app.get("/products", async (req, res) => {
   const cursor = Products.find();
   const result = await cursor.toArray();
@@ -50,13 +50,11 @@ app.get("/products", async (req, res) => {
 });
 
 ///getting all the categories api
-
 app.get("/categories", async (req, res) => {
   const cursor = Categories.find();
   const result = await cursor.toArray();
   res.send(result);
 });
-
 
 app.get("/", (req, res) => {
   res.send("ruchir alap is running");
