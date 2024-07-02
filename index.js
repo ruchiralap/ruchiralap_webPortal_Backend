@@ -149,6 +149,18 @@ app.put("/updateProduct/:id", async (req, res) => {
   res.send(result);
 });
 
+///change order status api
+
+app.put("/updateDeliveryStatus/:id", async (req, res) => {
+  const id = req.params.id;
+  const filter = { _id: new ObjectId(id) };
+  const updateDoc = {
+    $set: { deliveryStatus: "delivered" },
+  };
+  const result = await Orders.updateOne(filter, updateDoc);
+  res.send(result);
+});
+
 app.get("/", (req, res) => {
   res.send("ruchir alap is running");
 });
