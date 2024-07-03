@@ -49,9 +49,17 @@ dbConnect();
 const Products = client.db("ruchir_alap").collection("products");
 const Categories = client.db("ruchir_alap").collection("categories");
 const Orders = client.db("ruchir_alap").collection("orders");
+const Banners = client.db("ruchir_alap").collection("banners");
 ///getting all the products api
 app.get("/products", async (req, res) => {
   const cursor = Products.find();
+  const result = await cursor.toArray();
+  res.send(result);
+});
+
+///getting all the banners api
+app.get("/banners", async (req, res) => {
+  const cursor = Banners.find();
   const result = await cursor.toArray();
   res.send(result);
 });
