@@ -88,6 +88,21 @@ app.post("/addProduct", async (req, res) => {
   res.send(result);
 });
 
+///updating banner image api
+app.put("/updateBanner/:id", async (req, res) => {
+  const id = req.params.id;
+  const filter = { _id: new ObjectId(id) };
+  const options = { upsert: true };
+  const bannerInfoToUpdate = req.body;
+
+  const updateDoc = {
+    $set: bannerInfoToUpdate,
+  };
+
+  const result = await Banners.updateOne(filter, updateDoc, options);
+  res.send(result);
+});
+
 ///deleting a product
 ///deleting a category api
 
