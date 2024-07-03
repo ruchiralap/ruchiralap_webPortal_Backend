@@ -13,7 +13,7 @@ const corsOptions = {
   origin: [
     "http://localhost:5173",
     "http://localhost:5174",
-    "https://ruchiralap-dashboard.vercel.app/",
+    "https://ruchiralap-dashboard.vercel.app",
     "https://api.imgbb.com/1/upload?key=7b7cc2939f38dd7f29e0801393262933",
     "https://ruchiralap-web-portal.vercel.app",
   ],
